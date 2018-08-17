@@ -46,21 +46,21 @@ static inline ListNode *__natural_list_create(const std::vector<int> &v) {
   return head;
 }
 
-template <typename T>
-static inline std::string __stringify_two_dimensional_vector(const std::vector<std::vector<T> > val) {
-  if (val.empty()) { return std::string(); }
-
-  std::ostringstream ss;
-  ss << "[\n";
-  typename std::vector<std::vector<T> >::const_iterator iter = val.begin();
-  for (; ; ) {
-    ss << "  " << chef::stringify_stl_vector<T>(*iter++) << "";
-    if (iter == val.end()) { break; }
-    else { ss << ",\n"; }
-
-  }
-  ss << "\n]";
-  return ss.str();
-}
+//template <typename T>
+//static inline std::string __stringify_two_dimensional_vector(const std::vector<std::vector<T> > val) {
+//  if (val.empty()) { return std::string(); }
+//
+//  std::ostringstream ss;
+//  ss << "[\n";
+//  typename std::vector<std::vector<T> >::const_iterator iter = val.begin();
+//  for (; ; ) {
+//    ss << "  " << chef::stringify_stl_vector<T>(*iter++) << "";
+//    if (iter == val.end()) { break; }
+//    else { ss << ",\n"; }
+//
+//  }
+//  ss << "\n]";
+//  return ss.str();
+//}
 
 #endif

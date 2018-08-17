@@ -93,7 +93,7 @@ public:
 int main() {
   Solution s;
   vector<vector<string> > ret = s.solveNQueens(5);
-  std::cout << __stringify_two_dimensional_vector(ret) << std::endl;
+  std::cout << chef::stringify_stl(ret) << std::endl;
   return 0;
 }
 #endif
