@@ -6,3 +6,4 @@ if [ $# != 1 ] ; then
 fi
 
 g++ $1 -DYOKO_DEBUG -std=c++11 -O0 -g
+./a.out

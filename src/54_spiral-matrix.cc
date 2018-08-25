@@ -84,7 +84,7 @@ int main() {
   vec.push_back(vector<int>({9}));
   vec.push_back(vector<int>({6}));
   auto ret = s.spiralOrder(vec);
-  std::cout << "ret: " << chef::stringify_stl_vector(ret) << std::endl;
+  //std::cout << "ret: " << chef::stringify_stl_vector(ret) << std::endl;
   return 0;
 }
 #endif

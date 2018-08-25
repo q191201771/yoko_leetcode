@@ -24,8 +24,6 @@ public:
       for (int i = m-1; i >= 0; i--) {
         nums1[i+d] = nums1[i];
       }
-      //std::cout << chef::stringify_stl_vector(nums1) << std::endl;
-      //std::cout << "d:" << d << std::endl;
 
       int j = 0;
       int index = 0;
@@ -47,7 +45,6 @@ public:
           if (j < n) {
             nums1[index] = nums2[j];
             j++;
-            std::cout << "~index:" << index << std::endl;
           } else {
             break;
           }
@@ -68,9 +65,9 @@ int main() {
   //vector<int> nums2({2,5,6});
   //int m = 3;
   //int n = 3;
-  std::cout << "nums1.size:" << nums1.size() << ",nums2.size:" << nums2.size() << std::endl;
+  //std::cout << "nums1.size:" << nums1.size() << ",nums2.size:" << nums2.size() << std::endl;
   s.merge(nums1, m, nums2, n);
-  std::cout << chef::stringify_stl_vector(nums1) << std::endl;
+  //std::cout << chef::stringify_stl(nums1) << std::endl;
   return 0;
 }
 #endif

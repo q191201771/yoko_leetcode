@@ -31,7 +31,7 @@ private:
     int tmp = nums[nums[i]-1];
     nums[nums[i]-1] = nums[i];
     nums[i] = tmp;
-    //std::cout << "  " << chef::stringify_stl_vector(nums) << std::endl;
+    //std::cout << "  " << chef::stringify_stl(nums) << std::endl;
     help(nums, i);
   }
 public:
@@ -39,7 +39,7 @@ public:
       if (nums.empty()) { return 1; }
 
       for (std::size_t i = 0; i < nums.size(); i++) {
-        //std::cout << chef::stringify_stl_vector(nums) << std::endl;
+        //std::cout << chef::stringify_stl(nums) << std::endl;
         help(nums, i);
       }
 

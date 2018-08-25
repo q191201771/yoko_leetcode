@@ -19,7 +19,7 @@ class Solution {
 private:
   void help(vector<int> &nums, int index, vector<vector<int> > &ret, vector<int> &one, set<int> &s) {
     if (index == nums.size()) {
-      //std::cout << chef::stringify_stl_vector(one) << std::endl;
+      //std::cout << chef::stringify_stl(one) << std::endl;
       ret.push_back(one);
       return;
     }
