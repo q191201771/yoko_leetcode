@@ -2,12 +2,13 @@
 
 #ifdef YOKO_DEBUG
 
+#include <assert.h>
 #include <stdio.h>
+#include <iostream>
 #include <stack>
-#include <vector>
 #include <string>
 #include <sstream>
-#include <iostream>
+#include <vector>
 #include "chef_stringify_stl.hpp"
 using namespace std;
 
@@ -21,6 +22,8 @@ struct TreeNode {
   int val;
   TreeNode *left;
   TreeNode *right;
+  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+  TreeNode(int x, TreeNode *l, TreeNode *r) : val(x), left(l), right(r) {}
 };
 
 static inline std::string __natural_list_to_string(ListNode *p) {
